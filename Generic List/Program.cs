@@ -10,6 +10,7 @@ namespace Generic_List
     {
         static void Main(string[] args)
         {
+
             Console.ReadKey();
         }
     }
