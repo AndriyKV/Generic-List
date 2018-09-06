@@ -11,6 +11,7 @@ namespace Generic_List
     {
         static void Main(string[] args)
         {
+            #region 1
             List<string> smurfs = new List<string>() { "Papa", "Loser", "Brainy", "Sloppy"};
             smurfs.Add("Lucky"); //добавляємо елемент
             smurfs.AddRange(new string[] { "Sweepy", "Lazy", "Jokey" }); //добавляємо кілька(масив) смурфів
@@ -25,7 +26,8 @@ namespace Generic_List
             }
             Console.WriteLine(smurfs.IndexOf("Smurfette"));//виводимо індекс Сурфетти у списку
             Console.WriteLine(smurfs.BinarySearch("Smurfette"));////також виводимо індекс Сурфетти, але список має бути відсортований
-
+            #endregion
+            #region 2
             Console.WriteLine("-------------------------");
             //2 випадок, інший конструктор, вказуємо об'єм списку(capacity) = збільшуємо продуктивність та зменшуємо витрати на виділення пам'яті при додаванні елементів
             List<Doctor> doctors = new List<Doctor>(13);
@@ -38,7 +40,7 @@ namespace Generic_List
             {
                 Console.WriteLine(d.who);
             }
-
+            #endregion
             Console.ReadKey();
         }
     }
