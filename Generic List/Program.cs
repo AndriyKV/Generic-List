@@ -18,14 +18,15 @@ namespace Generic_List
             smurfs.Insert(0, "Smurfette"); //добавляємо Смурфетту першою у списку
             smurfs.RemoveAt(2); //видаляємо 3-го смурфа(Невдаху) із списку
             smurfs.Remove("Lazy"); //видаляємо Лінивого смурфа із списку (bool)
-            smurfs.Sort(); //сортуэмо смурфыв по алфавіту
+            smurfs.Sort(); //сортуємо смурфів по алфавіту
+            smurfs.Add("Gora");
                         
             foreach (string s in smurfs)//перебираємо та виводимо список Смурфів на консоль
             {
                 Console.WriteLine(s);
             }
             Console.WriteLine(smurfs.IndexOf("Smurfette"));//виводимо індекс Сурфетти у списку
-            Console.WriteLine(smurfs.BinarySearch("Smurfette"));////також виводимо індекс Сурфетти, але список має бути відсортований
+            Console.WriteLine(smurfs.BinarySearch("Smurfette"));//також виводимо індекс Сурфетти, але список має бути відсортований
             #endregion
             #region 2
             Console.WriteLine("-------------------------");
